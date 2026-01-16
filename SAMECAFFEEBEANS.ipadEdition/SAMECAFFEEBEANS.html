@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="icon" href="images/beans_brown.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8" />
+  <title>SAME CAFFEE BEANS</title>
+  <link rel="stylesheet" href="SAMECAFFEEBEANS.css" />
+</head>
+  <body>
+    <div id="gameContainer">
+      <div id="scoreboardWrapper">
+        <div id="scoreboardText">Score: 0</div>
+          <div id="recentScoreBox">
+            <h3>最近のスコア</h3>
+            <ul id="scoreList"></ul>
+          </div>
+
+      </div>
+    <canvas id="game" width="1150" height="750"></canvas>
+    </div>
+
+    <div id="startOverlay" class="overlay">
+      <h1>SAME CAFFEE BEANS</h1>
+      <button id="startBtn">スタート</button>
+    </div>
+
+    <div id="gameOverOverlay">
+      <h1>消せなくなってしまった</h1>
+      <p>リスタートボタンを押して再挑戦</p>
+      <button id="restartBtn">リスタート</button>
+    </div>
+
+    <div id="clearOverlay">
+      <h1>全部消すことができた！</h1>
+      <p>リスタートボタンを押して次へ進む</p>
+      <button id="restartBtn">リスタート</button>
+    </div>
+    <div id="volumeControls">
+      <div class="volume-row">
+        <span class="label">BGM：</span>
+        <input type="range" id="bgmVolume" min="0" max="1" step="0.01" value="0.5">
+      </div>
+      <div class="volume-row">
+        <span class="label">SE：</span>
+        <input type="range" id="seVolume" min="0" max="1" step="0.01" value="1">
+      </div>
+</div>
+
+
+
+    <script src="SAMECAFFEEBEANS.js"></script>
+  </body>
+  <footer id="credit">
+    <div>Music from 
+      <a href="https://uppbeat.io/t/arnito/esboco" target="_blank">
+        #Uppbeat
+      </a> (free for Creators!)
+      <br>License code: PF2D2LSDE0TY8QYA
+    </div>
+
+  </footer>
+
+</html>
